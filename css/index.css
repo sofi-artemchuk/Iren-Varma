@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Prata&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-family: Montserrat, sans-serif;
+}
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 74px 0 74px;
+    height: 42px;
+    background-color: rgb(127, 115, 187);
+}
+.tel a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.subheader .social-media-icon {
+    display: flex;
+    list-style-type: none;
+    
+}
+.social-media-icon a {
+    height: 13px;
+    width: 13px;
+    
+}
+.social-media-icon a img {
+    display: flex;
+    height: 13px;
+    width: 13px;
+}
+.social-media-icon li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10%;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+.main_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 86px;
+}
+.main_header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+.main_header nav li {
+    margin: 8px 23px;
+    font-size: 14px;
+}
+.name {
+    font-family: Prata, serif;
+    font-size: 26px;
+}
+.header-button button{
+    background-color: white;
+    border-color:  rgb(251, 168, 127);
+    border-radius: 40px;
+    height: 38px;
+    width: 145px;
+    font-size: 14px;
+    font-weight: 700;
+}
