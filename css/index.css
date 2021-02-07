@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Prata&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 :root {
     font-family: Montserrat, sans-serif;
+    color: #23263a;
 }
 .subheader {
     display: flex;
@@ -12,12 +13,13 @@
     align-items: center;
     padding: 0 74px 0 74px;
     height: 42px;
+
     background-color: rgb(127, 115, 187);
 }
 .tel a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     
 }
@@ -41,16 +43,21 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    border-radius: 10%;
+    border-radius: 15%;
     width: 25px;
     height: 25px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .main_header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 86px;
+}
+.name {
+    font-family: Prata, serif;
+    font-size: 26px;
+    padding-left: 30px;
 }
 .main_header nav ul {
     display: flex;
@@ -60,16 +67,113 @@
     margin: 8px 23px;
     font-size: 14px;
 }
-.name {
-    font-family: Prata, serif;
-    font-size: 26px;
-}
 .header-button button{
     background-color: white;
     border-color:  rgb(251, 168, 127);
+    border-style: solid;
     border-radius: 40px;
     height: 38px;
     width: 145px;
     font-size: 14px;
     font-weight: 700;
+    margin-right: 30px;
+}
+.header-button button:hover{
+    background-color: rgb(251, 168, 127);
+    cursor: pointer;
+}
+.promo {
+    background: url(../img/promo-background.png ) center center /cover no-repeat;
+    height: 777px;
+}
+.promo-text {
+    padding-top: 160px;
+    padding-left: 70px;
+}
+.promo-text h1 {
+    font-family: Prata, serif;
+    font-size: 56px;
+}
+.promo-text p {
+    font-size: 20px;
+    color: #646c8f;
+    line-height: 32px;
+    margin-top: 20px;
+}
+.promo-text button {
+    margin-top: 50px;
+    background-color: white;
+    color: #333758;
+    border-style: none;
+    border-radius: 40px;
+    height: 57px;
+    width: 204px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.promo-text button:hover {
+    background-color: rgb(127, 115, 187);
+    color: white;
+    cursor: pointer;
+}
+#about_me {
+    display: flex;
+    flex-direction: row;
+    height: 343px;
+    margin: 120px 80px ;
+        
+}
+.img-block {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 343px;
+    width: 570px;
+    margin: 0 15px;
+}
+.img-block img {
+    width: 100%;
+    position: absolute;
+    max-width: initial;
+    max-height: initial;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.text_about_me {
+    width: 50%;
+    margin: 0 15px;
+}
+.text_about_me h2 {
+    font-family: Prata, serif;
+    font-size: 48px;
+    margin-top: 5px;
+}
+.text_about_me p {
+    color: rgb(108,110,127);
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 27px;     
+}
+#treatments {
+    height: 1211px;
+    background: url(../img/treatmens-background.png) center center ;
+}
+.teatment-list {
+    display: flex;
+    justify-content: space-around;
+}
+.treatmen-window {
+    position: relative;
+    overflow: hidden;
+    /* background-color: white; */
+    width: 330px;
+    height: 352px;
+}
+.treatmen-window img {
+    width: 160%;
+    position: absolute;
+    max-width: initial;
+    max-height: initial;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
