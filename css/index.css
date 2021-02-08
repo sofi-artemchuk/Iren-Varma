@@ -81,6 +81,7 @@
 .header-button button:hover{
     background-color: rgb(251, 168, 127);
     cursor: pointer;
+    color: white;
 }
 .promo {
     background: url(../img/promo-background.png ) center center /cover no-repeat;
@@ -158,25 +159,49 @@
     height: 1211px;
     background: url(../img/treatmens-background.png) center center ;
 }
+#treatments h2 {
+    font-family: Prta, serif;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 100px;
+}
+#treatments p {
+    color: #646c8f;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+
+}
 .teatment-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 15px 15px;
+    margin-top: 30px;
+}
+.teatments-first-line {
+    display: flex;
+    flex-direction: row;
+}
+.teatments-second-line {
+    display: flex;
+    flex-direction: row;
 }
 .treatmen-window {
     position: relative;
     overflow: hidden;
-    /* background-color: white; */
     width: 330px;
     height: 352px;
-    border-width: 10px;
+    margin: 15px 15px;
+    border-width: 20px;
     border-color: white;
+    border-style: solid
 }
 .treatmen-window img {
     width: 160%;
     position: absolute;
     max-width: initial;
     max-height: initial;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, 0);
 }
