@@ -161,6 +161,7 @@
 .teatment-list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .treatmen-window {
     position: relative;
@@ -168,6 +169,8 @@
     /* background-color: white; */
     width: 330px;
     height: 352px;
+    border-width: 10px;
+    border-color: white;
 }
 .treatmen-window img {
     width: 160%;
