@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Prata&display=swap');
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 :root {
     font-family: Montserrat, sans-serif;
     color: #23263a;
 }
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
 .subheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 74px 0 74px;
     height: 42px;
-
     background-color: rgb(127, 115, 187);
 }
 .tel a {
@@ -52,20 +56,32 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 86px;
+    height: 132px;
 }
 .name {
     font-family: Prata, serif;
     font-size: 26px;
     padding-left: 30px;
 }
-.main_header nav ul {
+.main_header nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+}
+.main_header nav ul{
     display: flex;
     list-style-type: none;
 }
 .main_header nav li {
-    margin: 8px 23px;
+    /* margin: 8px 23px; */
     font-size: 14px;
+}
+.main_header nav a{
+    text-decoration: none;
+    color: #23263a;
+    margin: 8px ;
+
 }
 .header-button button{
     background-color: white;
