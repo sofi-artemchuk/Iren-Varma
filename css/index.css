@@ -288,11 +288,11 @@ body {
 
 
 #about_me {
-        display: flex;
-        flex-direction: column;
-        height: 834px;
-        padding: 90px 24px ;
-        
+    display: flex;
+    flex-direction: column;
+    height: 834px;
+    padding: 90px 24px ;
+    
 }
 .img-block {
     display: block;
@@ -378,8 +378,8 @@ body {
     text-align: center;
     padding-top: 100px;
 }
-#treatments p {
-    color: #646c8f;
+#treatments .treatments-subtitle {
+    color: var(--second-color);
     font-size: 20px;
     line-height: 32px;
     text-align: center;
@@ -394,7 +394,6 @@ body {
     position: relative;
     overflow: hidden;
     width: initial;
-    min-height: 370px;
     margin: 15px 15px;
     border-width: 20px;
     border-color: white;
@@ -403,16 +402,17 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 .treatmen-window img {
-    width: 160%;
-    position: absolute;
-    max-width: initial;
-    max-height: initial;
+    width: 100%;
+    object-fit: cover;
+    /* position: absolute; */
+    /* max-width: initial;
+    max-height: initial; */
     left: -30%;
     opacity:0.2; 
 } 
 .treatment-text {
     position: absolute;
-    top: 10%;
+    top: 5%;
     z-index: 2;
     font-family: Montsserat, sans-serif;
     font-size: 18px;
@@ -439,12 +439,12 @@ body {
         min-height: 340px;
     }
     .treatmen-window img {
-        width: 170%;
+        /* width: 100%; */
         left: -35%;
         opacity: 1;
     }
     .treatment-text {
-        top: 5%;
+        /* top: 5%; */
         z-index: -1;
     }
     .treatmen-window img:hover {
@@ -465,60 +465,73 @@ body {
     color: var(--main-color);
     font-weight: 400;
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 0;
+    
 }
-.slider {
-  position: relative;
-  overflow: hidden;
+.slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    
 }
-.slider__wrapper {
-  display: flex;
-  transition: transform 0.6s ease;
+.slides_item img {
+    width: 100%;
+    object-fit: cover;
 }
-.slider__item {
-  flex: 0 0 50%; /* определяет количество активных слайдов (в данном случае 2 */
-  max-width: 50%; /* определяет количество активных слайдов (в данном случае 2 */
+.slides_item {
+    position: relative;
+    display: none;
+    flex: 0 0 100%; 
+    max-width: 100%; 
 }
-/* СТИЛИ ДЛЯ КНОПОК "НАЗАД" И "ВПЕРЁД" */
-.slider__control {
-  position: absolute;
-  display: none;
-  top: 50%;
-  transform: translateY(-50%);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 40px; /* ширина кнопки */
-  height: 50px; /* высота кнопки */
-  opacity: .5; /* прозрачность */
-  background: #000; /* цвет фона */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
-.slider__control_show {
-  display: flex;
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
-.slider__control:hover,
-.slider__control:focus {
-  text-decoration: none;
-  outline: 0;
-  opacity: .9; /* прозрачность */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }
-.slider__control_left {
-  left: 0;
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
-.slider__control_right {
-  right: 0;
+.active, .dot:hover {
+    background-color: #717171;
 }
-.slider__control::before {
-  content: '';
-  display: inline-block;
-  width: 20px; /* ширина иконки (стрелочки) */
-  height: 20px; /* высота иконки (стрелочки) */
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
+.gallery form{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
 }
-.slider__control_left::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-.slider__control_right::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+.gallery button {
+    background-color: white;
+    border-color:  rgb(251, 168, 127);
+    border-style: solid;
+    border-radius: 15px;
+    height: 38px;
+    width: 131px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
 }

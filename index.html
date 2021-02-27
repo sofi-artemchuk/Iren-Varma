@@ -103,7 +103,7 @@
         <section id="treatments">
             <div>
                 <h2>Treatments</h2>
-                <p>I use the latest technologies to enhance my patients' natural features. <br> I specialize in the following cosmetic treatments:</p>
+                <p class="treatments-subtitle">I use the latest technologies to enhance my patients' natural features. <br> I specialize in the following cosmetic treatments:</p>
             </div>
             <div class="teatment-list">
                 <div class="treatmen-window">
@@ -154,46 +154,37 @@
             <div>
                 <h2>Gallery</h2>
             </div>
-            <div class="slider">
-                <div class="slider_wrapper">
-                    <div class="slider_item">
-                    </div>
-                    <div class="slider_item">
-                    </div>
-                    <div class="slider_item">
-                    </div>
-                    <div class="slider_item">
-                    </div>
-                    <div class="slider_item">
-                    </div>
-                    <div class="slider_item">
-                    </div>
-                </div>
-                <a class="slider_control slider_control_left" href="#" role="button"></a>
-                <a class="slider_control slider_control_right slider_control_show" href="#" role="button"></a>
-            </div>
-            <!-- <div class="galery_slider">
-                <div>
+            <div class="slideshow-container">
+                <div class="slides_item">
                     <img src="img/galery1.jfif" alt="photo">
                 </div>
-                <div>
+                <div class="slides_item">
                     <img src="img/galery2.jfif" alt="photo">
                 </div>
-                <div>
+                <div class="slides_item">
                     <img src="img/galery3.jfif" alt="photo">
                 </div>
-                <div>
+                <div class="slides_item">
                     <img src="img/galery4.jfif" alt="photo">
                 </div>
-                <div>
+                <div class="slides_item">
                     <img src="img/galery5.jfif" alt="photo">
                 </div>
-                <div>
+                <div class="slides_item">
                     <img src="img/galery6.jfif" alt="photo">
                 </div>
-            </div> -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
             <form action="#" target="_blank">
-                <button>More photos</button>
+                <button >More photos</button>
             </form> 
         </section>
         <!-- <section id="Discounts">
