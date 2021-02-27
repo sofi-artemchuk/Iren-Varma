@@ -369,8 +369,9 @@ body {
 }
 
 #treatments {
-    height: 1211px;
+    max-height: 3000px;
     background: url(../img/treatmens-background.png) center center ;
+    padding-bottom: 50px;
 }
 #treatments h2 {
     font-family: Prta, serif;
@@ -402,22 +403,21 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 .treatmen-window img {
+    display: block;
     width: 100%;
     object-fit: cover;
-    /* position: absolute; */
-    /* max-width: initial;
-    max-height: initial; */
     left: -30%;
     opacity:0.2; 
 } 
 .treatment-text {
     position: absolute;
-    top: 5%;
+    top:20%;
     z-index: 2;
     font-family: Montsserat, sans-serif;
     font-size: 18px;
     color:  rgb(251, 168, 127);
     text-align: center;
+    align-items: center;
 }
 .treatment-text h4{
     margin-bottom: 10px;
@@ -432,19 +432,19 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+     .treatment-text {
+        top: 5%;
+     }
 }
  
 @media (min-width: 990px) {
-    .treatmen-window{
-        min-height: 340px;
-    }
+  
     .treatmen-window img {
-        /* width: 100%; */
         left: -35%;
         opacity: 1;
     }
     .treatment-text {
-        /* top: 5%; */
+        top: 10%;
         z-index: -1;
     }
     .treatmen-window img:hover {
@@ -458,6 +458,7 @@ body {
 .gallery {
     background: url(../img/galery-background.png) center center /cover;
     min-height: 403px;
+    padding: 0 50px;
 }
 .gallery h2 {
     font-family: Prata, serif;
@@ -472,6 +473,9 @@ body {
     max-width: 700px;
     position: relative;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    /* padding: 0 50px; */
     
 }
 .slides_item img {
@@ -479,10 +483,10 @@ body {
     object-fit: cover;
 }
 .slides_item {
-    position: relative;
     display: none;
-    flex: 0 0 100%; 
-    max-width: 100%; 
+    flex: 0 0 50%; 
+    max-width: 50%; 
+    margin: 0 15px;
 }
 
 .prev, .next {
@@ -498,6 +502,9 @@ body {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+}
+.prev {
+    left: 0;
 }
 .next {
     right: 0;
