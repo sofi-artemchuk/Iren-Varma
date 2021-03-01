@@ -190,64 +190,61 @@
                 <button >More photos</button>
             </form> 
         </section>
-        <section id="Discounts">
-            <div>
+        <section id="discounts">
+            <div class="discount-header">
                 <h2>Discounts</h2>
                 <p>Here is the list of our juiciest ones:</p>
             </div>
-            <div>
-                <div>
+            <div class="discount-items">
+                <div class="discount-img">
                     <img src="img/discount-laser.jfif" alt="photo">
                 </div>
-                <div>
+                <div class="discount-text">
                     <h3>-20% Laser procedure</h3>
-                    <p>
-                        <span>ends on September 16, 2019</span>
-                        We understand the benefits of laser treatment services, but what about you? That is why, we decided to offer you a discount so you can pamper yourself with our laser treatment.
-                        <span><a href="#">read more</a></span>
-                    </p>
+                    <p> <span>ends on September 16, 2019</span> <br> <br>
+                     We understand the benefits of laser treatment services, but what about you? That is why, we decided to offer you a discount so you can pamper yourself with our laser treatment.</p>
+                    <a href="#">Read more</a>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="discount-items">
+                <div class="discount-img">
                     <img src="img/discount-consultation.jfif" alt="photo">
                 </div>
-                <div>
+                <div class="discount-text">
                     <h3>-50% First consultation</h3>
                     <p>
-                        <span>ends on September 12, 2019</span>
-                        Choosing a cosmetic surgery provider is not easy at all. You trust us arguably the most precious thing – your body and skin, while our job is to give stellar results. We understand your worries, which is why we want to give you a 50% discount as a way of saying thank you for choosing us.
-                        <span><a href="#">read more</a></span>
-                    </p>
+                        <span>ends on September 12, 2019</span> <br> <br>
+                        Choosing a cosmetic surgery provider is not easy at all. You trust us arguably the most precious thing – your body and skin, while our job is to give stellar results. We understand your worries, which is why we want to give you a 50% discount as a way of saying thank you for choosing us.</p>
+                    <a href="#">Read more</a>
                 </div>
             </div>
         </section>
-         <!--<section id="Awards">
-            <div>
+        <section id="awards">
+            <div class="awards-header">
                 <h2>Certificates and Awards</h2>
             </div>
-            <div class="secrtificate">
-                <div>
+            <div class="certificate">
+                <div class="certificate-block" >
                     <img src="img/certificate1.png" alt="certificate">
                 </div>
-                <div>
+                <div class="certificate-block">
                     <img src="img/certificate2.png" alt="certificate">
                 </div>
-                <div>
+                <div class="certificate-block">
                     <img src="img/certificate3.png" alt="certificate">
                 </div>
-                <div>
+                <div class="certificate-block">
                     <img src="img/certificate4.png" alt="certificate">
                 </div>
             </div>
         </section>
-        <section id="Testimonials">
-            <div>
+        <section id="testimonials">
+            <div class="testimonials-header">
                 <h2>Our Happy Clients</h2>
             </div>
-            <div class="Testimonials_slider">
-                <div>
-                    <div>
+            <div class="testimonials_slider">
+                <div class="testimonials-item">
+                    <div class="testimonials_img">
                         <img src="img/TestimonialsStone.jfif" alt="photo">
                     </div>
                     <div>
@@ -263,7 +260,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="testimonials-item">
                     <div>
                         <img src="img/TestimonialsWilson.jfif" alt="photo">
                     </div>
@@ -280,7 +277,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="testimonials-item">
                     <div>
                         <img src="img/Testimonials3.jfif" alt="photo">
                     </div>
@@ -297,9 +294,16 @@
                         </div>
                     </div>
                 </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
         </section>
-        <section>
+        <!--<section>
             <div>
                 <h2>Find Me on Social Media</h2>
                <div class="social_media">
@@ -312,7 +316,7 @@
                 </div>
             </div>
         </section>
-        <section id="Contacts">
+        <section id="contacts">
             <div>
                 <h2>Contacts</h2>
                 <p>Fill in the form and request a call to book a free cosmetologist consultation and address any of your skin care needs.</p>
@@ -352,12 +356,12 @@
         <div>
             <nav>
                 <ul>
-                    <li><a href="#About_me">About me</a></li>
-                    <li><a href="#Treatments">Treatments</a></li>
-                    <li><a href="#Testimonials">Testimonials</a></li>
-                    <li><a href="#Discounts">Discounts</a></li>
-                    <li><a href="#Awards">Awards</a></li>
-                    <li><a href="#Contacts">Contacts</a></li>
+                    <li><a href="#about_me">About me</a></li>
+                    <li><a href="#treatments">Treatments</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#discounts">Discounts</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
         </div>
