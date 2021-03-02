@@ -1,4 +1,4 @@
-(function() {
+// (function() {
     var slideIndex = 1;
     showSlides(slideIndex);
     function plusSlides(n) {
@@ -8,7 +8,7 @@
         var i;
         var slides = document.getElementsByClassName("slides_item");
         var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
+        if (n > slides.length-1) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
@@ -20,7 +20,7 @@
     slides[slideIndex-0].style.display = "block";
     dots[slideIndex-1].className += " active";
     }
-})();
+// })();
 
 // (function() {
 //     var slideIndex = 1;
